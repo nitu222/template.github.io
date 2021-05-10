@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+    <title> Template</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }    
+        nav{
+            background: #3498db;
+            overflow: auto;
+            width: 100%;
+            
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+            margin-right: 50px;
+        }
+        li{
+            display: inline-block;
+        }
+        .left li a{
+            width: 120px;
+            display: block;
+            background: #3498db;
+            font-size: 15px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color:#ecf0f1;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 10px;
+        }
+        .right li a{
+            width: 50px;
+            display: block;
+            color:#ecf0f1;
+            text-align: center;
+            padding: 10px;
+        }
+        .left li a:hover, .right li a:hover{
+            background: #2980b9;
+            border-radius: 10px;
+        }
+        .fa-home, .fa-facebook, .fa-twitter, .fa-google-plus{
+            font-size: 20px;
+        }
+        .wrapper{
+            display: flex;
+            flex-flow:row wrap;
+            text-align: center;
+        }
+        .wrapper>*{
+            padding: 10px;
+            margin: 10px;
+            flex 1 100%;
+            border-radius: 10px;
+        }
+        .header{
+            background: #5CACEE;
+            height: 150px;
+            width: 100%;
+        }
+        .aside{
+            background: #FEE12B;
+            height: 300px;
+            width: 300px;
+        }
+        .main{
+            background: #bdc3c7;
+            height:29%;
+            border-radius: 5px;
+            padding:0 20px;
+            width: 926px;
+        }
+  
+}
+       
+        @media screen and (min-width: 1024px){
+            flex:1;
+        }
+        @media screen and (min-width:768px)and (max-width:1023px){
+            *{
+                scroll-behavior: smooth;
+            }
+            .fa-home, .fa-facebook, .fa-twitter, .fa-google-plus{
+                font-size: 18px;
+                padding-left: 10px;
+            }
+            .nav ul li a{
+               display: block;
+               margin: 20px 0;
+               line-height: 20px;
+            }
+            .aside{
+                width:40%;
+            }
+            .points{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .points .main {
+                height: 20px;
+                flex-direction: row;
+                width: 58%;!important;
+            }
+            .main {
+                height: auto;
+                position: relative;
+                float: none;
+            }
+        }
+        @media screen and (max-width:767px){
+            .fa-home, .fa-facebook, .fa-twitter, .fa-google-plus{
+                font-size: 14px;
+            }
+            .nav{
+                height:10px;
+            }
+            .nav ul li a{
+               display: block;
+               margin: 10px 0;
+               line-height: 10px;
+            }
+            .aside{
+                width:100%;   
+            }
+            .points{
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .points .main {
+                height: 20px;
+                width: 560px;
+            } 
+            .main{
+                height: auto;
+                position: relative;
+                float: none;
+            }
+        }
+
+    </style>
+    </head>
+    <body>
+     <nav>
+         <ul class ="left">
+         <li><a href="#"><i class ="fa fa-home"> HOME</i></a></li>
+         </ul>
+        <ul class="right">
+            <li><a href="#"><i class ="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class ="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class ="fa fa-google-plus"></i></a></li>
+        </ul>
+     </nav> 
+        <div class ="wrapper">
+           <header class="header">
+            <h1>  </h1>
+            </header>
+            <aside class="aside">
+                <h1>  </h1>
+            </aside>
+        <div class ="points" style="box-sizing: 10vw">
+            <article class="main">
+                <p>  </p>
+            </article>
+            <article class="main">
+                <p> </p>
+            </article>
+            <article class="main">
+                <p>  </p>
+            </article>
+            </div>
+        </div>
+    </body>
+</html>
